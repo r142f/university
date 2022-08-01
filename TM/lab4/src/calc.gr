@@ -1,0 +1,18 @@
+e returns [val: number]: t e1[{_ t.val _}] {_ val = e1.val; _}
+e1 [i: number] returns [val: number]: PLUS t e1[{_ i + t.val _}] {_ val = e1.val; _} | MINUS t e1[{_ i - t.val _}] {_ val = e1.val; _} | {_ val = i; _}
+t returns [val: number]: p t1[{_ p.val _}] {_ val = t1.val; _}
+t1 [i: number] returns [val: number]: MUL p t1[{_ i * p.val _}] {_ val = t1.val; _} | DIV p t1[{_ i / p.val _}] {_ val = t1.val; _} | {_ val = i; _}
+p returns [val: number]: f p1[{_ f.val _}] {_ val = p1.val _}
+p1 [i: number] returns [val: number]: POW p {_ val = i ** p.val _} | {_ val = i; _}
+f returns [val: number]: MINUS NUM {_ val = Number.parseFloat(NUM) * (-1) _} | NUM {_ val = Number.parseFloat(NUM); _} | LP e RP {_ val = e.val; _}
+
+PLUS: "+"
+MINUS: "-"
+DIV: "/"
+POW: "^"
+MUL: "*"
+LP: "("
+RP: ")"
+NUM: '\d+(\.\d+)?'
+
+@ignore: '\s'

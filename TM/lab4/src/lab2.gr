@@ -1,0 +1,17 @@
+e: o e1
+e1: OR e | 
+o: x o1
+o1: XOR o | 
+x: a x1
+x1: AND x | 
+a: VAR | NOT a | LP e RP
+
+LP: "("
+RP: ")"
+VAR: '[a-zA-Z]+'
+OR: "|"
+AND: "&"
+NOT: "!"
+XOR: "^"
+
+@ignore: '\s'

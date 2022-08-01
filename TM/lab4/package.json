@@ -1,0 +1,26 @@
+{
+  "name": "lab4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "sh scripts/run.sh",
+    "antlr4ts": "cd src/generator && antlr4ts Grammar.g4 -o generated && cd ../.."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antlr4": "^4.9.3",
+    "antlr4ts": "^0.5.0-alpha.4",
+    "canvas": "^2.8.0",
+    "graphviz": "0.0.9",
+    "graphviz-cli": "^1.0.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "antlr4ts-cli": "^0.5.0-alpha.4",
+    "typescript": "^4.5.4",
+    "@types/graphviz": "0.0.34"
+  }
+}

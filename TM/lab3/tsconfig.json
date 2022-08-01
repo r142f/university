@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target":"ES2020",
+    "module": "esnext",
+    "allowJs": true,
+    "strict": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+  }
+}
