@@ -1,0 +1,23 @@
+{
+  "name": "hw8",
+  "version": "1.0.0",
+  "description": "- Установить go-ethereum (https://geth.ethereum.org/docs/getting-started/installing-geth)   ```bash   sudo add-apt-repository -y ppa:ethereum/ethereum   sudo apt-get update   sudo apt-get install ethereum   ``` - Создать новый аккаунт   ```bash   mkdir datadir   geth account new -datadir datadir   ``` - Добавить из сгенерированного в директории `datadir/keystore` файла адрес `$ADDRESS` (поле `\"address\"`) в файл [genesis.json](./genesis.json) как элемент списка в поле `\"alloc\"`   ```json     ...     \"alloc\": {       \"$ADDRESS\": { \"balance\": \"300000\" }     }   ``` - Инициализировать сеть   ```bash   geth --datadir=./datadir init genesis.json   ``` - Запустить ethereum ноду   ```bash   geth --datadir datadir --http --mine --networkid 17 --miner.etherbase $ADDRESS --miner.threads 1 --unlock $ADDRESS --allow-insecure-unlock   ```   где `$ADDRESS` — значение поля `\"address\"` из сгенерированного файла в директории [datadir/keystore](./datadir/keystore) - Среди логов будет строка вида   ```bash   INFO [12-30|20:33:19.211] HTTP server started                      endpoint=127.0.0.1:8551 auth=true  prefix= cors=localhost vhosts=localhost   ```   Значение параметра endpoint добавьте в файл [configuration.json](./configuration.json) как значение поля `\"ethereum_node_address\"` в формате `http://127.0.0.1:8551`",
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "busboy": "^1.6.0",
+    "ethers": "^5.7.2",
+    "express": "^4.18.2",
+    "hardhat": "^2.12.5",
+    "ipfs-http-client": "^33.1.1",
+    "web3": "^1.8.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

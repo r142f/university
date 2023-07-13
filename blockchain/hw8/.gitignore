@@ -1,0 +1,9 @@
+kubo
+node_modules
+kubo_*.gz
+package-lock.json
+keystore
+geth
+cache
+artifacts
+datadir

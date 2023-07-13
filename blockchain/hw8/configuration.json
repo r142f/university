@@ -1,0 +1,5 @@
+{
+  "ethereum_node_address": "http://127.0.0.1:8545",
+  "contract_address": "0x25EE394f7A2f93821565e352B4DcC4f670A993Ed",
+  "ipfs_address": "/ip4/127.0.0.1/tcp/5001"
+}
