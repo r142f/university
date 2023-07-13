@@ -1,0 +1,8 @@
+github.com/gogap/aop v0.0.0-20220622063547-602d72218eb8 h1:zKFwkDixKbLSSOLXJzl+6yfXbgoACG2BKm0ksSax/yA=
+github.com/gogap/aop v0.0.0-20220622063547-602d72218eb8/go.mod h1:L2mFgPKi/+49acEQYAPJ53I3n3H4C8mB9N5VOeo9GDM=
+github.com/gogap/errors v0.0.0-20210818113853-edfbba0ddea9 h1:qvGIRaCYFKkyFK9SgRXJCc/lmQCeeg2cl3mwBKQd5W0=
+github.com/gogap/errors v0.0.0-20210818113853-edfbba0ddea9/go.mod h1:tbRYYYC7g/H7QlCeX0Z2zaThWKowF4QQCFIsGgAsqRo=
+github.com/gogap/stack v0.0.0-20150131034635-fef68dddd4f8 h1:AuxION6c7in+AsPmFjQTUKT6/o1suT8XEEpfU0pWsHA=
+github.com/gogap/stack v0.0.0-20150131034635-fef68dddd4f8/go.mod h1:6q1WEv2BiAO4FSdwLQTJbWQYAn1/qDNJHUGJNXCj9kM=
+github.com/rs/xid v1.4.0 h1:qd7wPTDkN6KQx2VmMBLrpHkiyQwgFXRnkOLacUiaSNY=
+github.com/rs/xid v1.4.0/go.mod h1:trrq9SKmegXys3aeAKXMUTdJsYXVwGY3RLcfgqegfbg=
